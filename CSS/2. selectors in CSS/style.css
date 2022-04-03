@@ -1,0 +1,36 @@
+*{
+  font-style: italic;
+}
+
+div{
+  color: blue;
+}
+
+p{
+  color:red;
+}
+
+.big{
+  font-size: 24px;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+#one{
+  background-color: orange;
+}
+
+#two{
+  padding-left: 40px;
+}
+
+input[disabled]{
+  width: 200px;
+  font-size: 30px;
+}
+
+input[type="text"]{
+  font-size: 40px;
+}

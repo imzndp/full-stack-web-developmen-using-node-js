@@ -1,0 +1,194 @@
+<!DOCTYPE html> <!--tells the browser what type of file it is-->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8"> <!-- Character set used in code-->
+    <meta name="viewport" content="width-device-width, internal-scale=1.0">
+    <title>HTML Basic</title>
+  </head>
+  <body>
+    <!-- Headings in HTML-->
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+
+    <!-- Paragraph in HTML -->
+    <p>
+      This is a Paragraph.
+    </p>
+    <p>
+      This is Second Paragraph.
+    </p>
+
+    <!-- White spaces in HTML -->
+    <p>
+      This is a line.
+      This is second line without line break.
+      <br>
+      Line with line break.
+    </p>
+
+    <!-- Character styling in HTML -->
+    <p>
+      This text is <i>Italic</i>.<br>
+      This text is <b>Bold</b>.<br>
+      This text is <u>Underline</u>.<br>
+      This text is <s>Strikethrough</s>.<br>
+    </p>
+    <!-- some elements in HTML are by default Block and some are inline . But we can force them to make inline or block using CSS. -->
+    <!-- Block elements take complete block in that line -->
+
+    <!-- List in HTML -->
+    <!-- Unordered list in HTML -->
+    <ul>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <ul type="circle">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <ul type="square">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ul>
+
+    <!-- Order list -->
+    <ol>
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <ol type="a">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <ol type="1" start="10">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+      <li>Item 4</li>
+    </ol>
+
+    <!-- Nested list -->
+    <ul>
+    <li>First list item 1</li>
+    <ol>
+        <li>Nested itme 1</li>
+        <li>Nested item 2</li>
+        <li>Nested item 3</li>
+    </ol>
+    <li>First list item 2</li>
+    <li>First list item 3</li>
+    </ul>
+
+    <!-- Table in HTML -->
+    <table align="center" border="1" cellspacing="10" cellpadding="10" >
+      <tr>
+        <td>First</td>
+        <td>Second</td>
+        <td>Additional</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">Third</td>
+        <td rowspan="2">Forth</td>
+      </tr>
+      <tr>
+        <td>Fifth</td>
+        <td>Sixth</td>
+      </tr>
+    </table>
+
+    <!-- Links in HTML -->
+    <h1>Anchor Links</h1>
+    <a href="https://google.com">Go to Google</a><br>
+    <a href="./inner-link.html">Go to inner-link page</a>
+    <h2>Target</h2>
+    <a href="https://example.com" target="_blank">Opens in new tab</a>
+    <br>
+    <!-- iframe in HTML -->
+    <h2>iFrames</h2>
+    <iframe src="./inner-link.html" width="400" height="400" frameborder="0"></iframe>
+    <iframe src="https://example.com" width="400" height="400" frameborder="0"></iframe>
+
+    <!-- Opens in iFrame -->
+    <h2>Open links  in iFrames</h2>
+    <ul>
+      <li><a href="./inner-link.html" target="frame1">Innner links</a></li>
+      <li><a href="https://example.com" target="frame1">Example</a></li>
+    </ul>
+    <iframe name="frame1" src="" width="400" height="400"></iframe>
+
+    <!-- using media of  HTML -->
+    <h1>Media</h1>
+    <img height="500" width="500" src="media/example.jpg" alt="photo of laptop">
+    <br>
+    <video preload="none" loop controls autoplay src="media/example.mp4"></video>
+    <br>
+    <audio controls src="media/example.mp3"></audio>
+
+    <!-- Form element in HTML -->
+    <h2>Form elements</h2>
+    <input type="text">
+    <br>
+    <br>
+    <input type="password">
+    <br><br>
+    <input type="email">
+    <br><br>
+    <input type="number" min="100" max="200">
+    <br><br>
+    <input type="date">
+    <br><br>
+    <input type="color">
+    <br><br>
+    <input type="file">
+    <br><br>
+    <input id="a" type="checkbox"><label for="a">A</label>
+    <input id="b" type="checkbox"><label for="b">B</label>
+    <input id="c" type="checkbox"><label for="c">C</label>
+    <br><br>
+    <input type="radio">X
+    <input type="radio">Y
+    <input type="radio">Z
+    <br><br>
+    <h2>Text area</h2>
+    <textarea></textarea>
+    <br><br>
+    <select >
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+      <option>D</option>
+    </select>
+    <br><br>
+    <select multiple>
+      <option>A</option>
+      <option>B</option>
+      <option>C</option>
+      <option>D</option>
+    </select>
+
+    <!-- form example in html -->
+    <form action="https://google.com/search">
+      <input name="q">
+      <button type="submit">Search</button>
+      <button type="reset">Clear</button>
+    </form>
+  </body>
+</html>
